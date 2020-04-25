@@ -159,28 +159,46 @@ namespace Calculate
         private double GetTrigonometryResalt(string fun, string value, string typeDegree)
         {
             double angle = Double.Parse(value);
+            double roundAngle = 0;
             double resalt = 0;
             if (typeDegree == "grad")
             {
+
                 angle = Math.PI * angle / 180;
             }
             switch (fun)
             {
                 case "sin":
-                    resalt = Math.Sin(angle);
+                    roundAngle = Math.Round(angle, 4);
+                    if (roundAngle == 3.1416 || roundAngle == 6.2832)
+                    {
+                        resalt = 0;
+                    }
+                    else
+                    {
+                        resalt = Math.Sin(angle);
+                    }
                     break;
                 case "cos":
-                    resalt = Math.Cos(angle);
+                    roundAngle = Math.Round(angle, 4);
+                    if (roundAngle == 1.5708 || roundAngle == 4.7124)
+                    {
+                        resalt = 0;
+                    }
+                    else
+                    {
+                        resalt = Math.Cos(angle);
+                    }
                     break;
                 case "tan":
-                    double ex = Math.Round(angle, 4);
+                    roundAngle = Math.Round(angle, 4);
                     try
                     {
-                        if (ex == 1.5708)
+                        if (roundAngle == 1.5708 || roundAngle == 4.7124)
                         {
-                            throw new Exception("tan(90) не сущесвует!");
+                            throw new Exception("tan(" + value.ToString() + ") не сущесвует!");
                         }
-                        resalt = Math.Tan(angle);
+                        resalt = Math.Round(Math.Tan(angle));
                     }
                     catch (Exception e)
                     {
