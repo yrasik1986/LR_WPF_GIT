@@ -1,0 +1,15 @@
+D:\Education\BSUIR\3_trim\SVPP\LR\LR_WPF_GIT\LR2_MovButton\bin\Debug\LR2_MovButton.exe.config
+D:\Education\BSUIR\3_trim\SVPP\LR\LR_WPF_GIT\LR2_MovButton\bin\Debug\LR2_MovButton.exe
+D:\Education\BSUIR\3_trim\SVPP\LR\LR_WPF_GIT\LR2_MovButton\bin\Debug\LR2_MovButton.pdb
+D:\Education\BSUIR\3_trim\SVPP\LR\LR_WPF_GIT\LR2_MovButton\obj\Debug\LR2_MovButton.csprojAssemblyReference.cache
+D:\Education\BSUIR\3_trim\SVPP\LR\LR_WPF_GIT\LR2_MovButton\obj\Debug\MainWindow.g.cs
+D:\Education\BSUIR\3_trim\SVPP\LR\LR_WPF_GIT\LR2_MovButton\obj\Debug\App.g.cs
+D:\Education\BSUIR\3_trim\SVPP\LR\LR_WPF_GIT\LR2_MovButton\obj\Debug\LR2_MovButton_MarkupCompile.cache
+D:\Education\BSUIR\3_trim\SVPP\LR\LR_WPF_GIT\LR2_MovButton\obj\Debug\LR2_MovButton_MarkupCompile.lref
+D:\Education\BSUIR\3_trim\SVPP\LR\LR_WPF_GIT\LR2_MovButton\obj\Debug\MainWindow.baml
+D:\Education\BSUIR\3_trim\SVPP\LR\LR_WPF_GIT\LR2_MovButton\obj\Debug\LR2_MovButton.g.resources
+D:\Education\BSUIR\3_trim\SVPP\LR\LR_WPF_GIT\LR2_MovButton\obj\Debug\LR2_MovButton.Properties.Resources.resources
+D:\Education\BSUIR\3_trim\SVPP\LR\LR_WPF_GIT\LR2_MovButton\obj\Debug\LR2_MovButton.csproj.GenerateResource.cache
+D:\Education\BSUIR\3_trim\SVPP\LR\LR_WPF_GIT\LR2_MovButton\obj\Debug\LR2_MovButton.csproj.CoreCompileInputs.cache
+D:\Education\BSUIR\3_trim\SVPP\LR\LR_WPF_GIT\LR2_MovButton\obj\Debug\LR2_MovButton.exe
+D:\Education\BSUIR\3_trim\SVPP\LR\LR_WPF_GIT\LR2_MovButton\obj\Debug\LR2_MovButton.pdb
