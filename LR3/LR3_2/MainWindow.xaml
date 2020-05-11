@@ -1,0 +1,130 @@
+﻿<Window x:Class="LR3_2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LR3_2"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="900">
+    <Window.Resources>
+        <Style TargetType="{x:Type TextBox}">
+            <Style.Triggers>
+                <Trigger Property="Validation.HasError" Value="True">
+                    <Setter Property="ToolTip"
+                            Value="{Binding RelativeSource={x:Static
+                        RelativeSource.Self},
+                        Path=(Validation.Errors)[0].ErrorContent}"/>
+                    <Setter Property="Background" Value="Pink"/>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+
+        <Style TargetType="{x:Type ComboBox}">
+            <Style.Triggers>
+                <Trigger Property="Validation.HasError" Value="True">
+                    <Setter Property="ToolTip"
+                            Value="{Binding RelativeSource={x:Static
+                        RelativeSource.Self},
+                        Path=(Validation.Errors)[0].ErrorContent}"/>
+                    <Setter Property="Background" Value="Pink"/>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+    </Window.Resources>
+    
+    <Grid>
+        <StackPanel Orientation="Horizontal">
+            <StackPanel x:Name ="MainStac"  Orientation="Vertical" Margin="10,10,10,10">
+                <StackPanel Orientation="Horizontal" Margin="10,10,20,20">
+                    <TextBlock Width="120" Text="Фамилия" TextAlignment="Left" FontSize="20" FontWeight="Bold"/>
+                    <TextBox Width="120">
+                        <TextBox.Text>
+                            <Binding Path="Name">
+                                <Binding.ValidationRules>
+                                    <DataErrorValidationRule/>
+                                </Binding.ValidationRules>
+                            </Binding>
+                        </TextBox.Text>
+                    </TextBox>
+                </StackPanel>
+
+                <StackPanel Orientation="Horizontal" Margin="10,10,20,20">
+                    <TextBlock Width="120" Text="Зарплата" TextAlignment="Left" FontSize="20" FontWeight="Bold"/>
+                    <TextBox Width="120">
+                        <TextBox.Text>
+                            <Binding Path="Salary">
+                                <Binding.ValidationRules>
+                                    <DataErrorValidationRule/>
+                                </Binding.ValidationRules>
+                            </Binding>
+                        </TextBox.Text>
+                    </TextBox>
+                </StackPanel>
+
+                <StackPanel Orientation="Horizontal" Margin="10,10,20,20">
+                    <TextBlock Width="120" Text="Должность" TextAlignment="Left" FontSize="20" FontWeight="Bold"/>
+                    <ComboBox x:Name="ComboPosition"  Width="120" IsEditable="True" 
+                        StaysOpenOnEdit="True" FontSize="16" >
+                        <ComboBox.Text>
+                            <Binding Path="Position">
+                                <Binding.ValidationRules>
+                                    <DataErrorValidationRule/>
+                                </Binding.ValidationRules>
+                            </Binding>
+                        </ComboBox.Text>
+                    </ComboBox>
+                </StackPanel>
+
+                <StackPanel Orientation="Horizontal" Margin="10,10,20,20">
+                    <TextBlock Width="120" Text="Город" TextAlignment="Left" FontSize="20" FontWeight="Bold"/>
+                    <ComboBox x:Name="ComboSity"  Width="120" IsEditable="True" 
+                              StaysOpenOnEdit="True" FontSize="16">
+                        <ComboBox.Text>
+                            <Binding Path="Sity">
+                                <Binding.ValidationRules>
+                                    <DataErrorValidationRule/>
+                                </Binding.ValidationRules>
+                            </Binding>
+                        </ComboBox.Text>
+                    </ComboBox>
+                </StackPanel>
+
+                <StackPanel Orientation="Horizontal" Margin="10,10,20,20">
+                    <TextBlock Width="120" Text="Улица" TextAlignment="Left" FontSize="20" FontWeight="Bold"/>
+                    <ComboBox x:Name="ComboStreet"  Width="120" IsEditable="True" 
+                              StaysOpenOnEdit="True" FontSize="16">
+                        <ComboBox.Text>
+                            <Binding Path="Street">
+                                <Binding.ValidationRules>
+                                    <DataErrorValidationRule/>
+                                </Binding.ValidationRules>
+                            </Binding>
+                        </ComboBox.Text>
+                    </ComboBox>
+                </StackPanel>
+
+                <StackPanel Orientation="Horizontal" Margin="10,10,20,20">
+                    <TextBlock Width="120" Text="Дом" TextAlignment="Left" FontSize="20" FontWeight="Bold"/>
+                    <TextBox  Width="120">
+                        <TextBox.Text>
+                            <Binding Path="House">
+                                <Binding.ValidationRules>
+                                    <DataErrorValidationRule/>
+                                </Binding.ValidationRules>
+                            </Binding>
+                        </TextBox.Text>
+                    </TextBox>
+                </StackPanel>
+
+                <Button x:Name="WritePerson" Height="30" Width="120" Margin="10,10,20,20" Content="Записать в базу" Click="WritePerson_Click"/>
+
+            </StackPanel>
+
+            <StackPanel Orientation="Vertical">
+                <ListBox x:Name="MyListBox" Height="340" Width="500" Margin="10,10,10,10" ItemsSource="{Binding}" />
+                <Button x:Name="ReadPerson" Height="30" Width="120" Margin="10,10,20,20" Content="Прочитать из базы" Click="ReadPerson_Click"/>
+
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>

@@ -1,0 +1,15 @@
+D:\Education\BSUIR\3_trim\SVPP\LR\LR_WPF_GIT\LR3\LR3_2\bin\Debug\LR3_2.exe.config
+D:\Education\BSUIR\3_trim\SVPP\LR\LR_WPF_GIT\LR3\LR3_2\bin\Debug\LR3_2.exe
+D:\Education\BSUIR\3_trim\SVPP\LR\LR_WPF_GIT\LR3\LR3_2\bin\Debug\LR3_2.pdb
+D:\Education\BSUIR\3_trim\SVPP\LR\LR_WPF_GIT\LR3\LR3_2\obj\Debug\LR3_2.csprojAssemblyReference.cache
+D:\Education\BSUIR\3_trim\SVPP\LR\LR_WPF_GIT\LR3\LR3_2\obj\Debug\MainWindow.g.cs
+D:\Education\BSUIR\3_trim\SVPP\LR\LR_WPF_GIT\LR3\LR3_2\obj\Debug\App.g.cs
+D:\Education\BSUIR\3_trim\SVPP\LR\LR_WPF_GIT\LR3\LR3_2\obj\Debug\LR3_2_MarkupCompile.cache
+D:\Education\BSUIR\3_trim\SVPP\LR\LR_WPF_GIT\LR3\LR3_2\obj\Debug\LR3_2_MarkupCompile.lref
+D:\Education\BSUIR\3_trim\SVPP\LR\LR_WPF_GIT\LR3\LR3_2\obj\Debug\MainWindow.baml
+D:\Education\BSUIR\3_trim\SVPP\LR\LR_WPF_GIT\LR3\LR3_2\obj\Debug\LR3_2.g.resources
+D:\Education\BSUIR\3_trim\SVPP\LR\LR_WPF_GIT\LR3\LR3_2\obj\Debug\LR3_2.Properties.Resources.resources
+D:\Education\BSUIR\3_trim\SVPP\LR\LR_WPF_GIT\LR3\LR3_2\obj\Debug\LR3_2.csproj.GenerateResource.cache
+D:\Education\BSUIR\3_trim\SVPP\LR\LR_WPF_GIT\LR3\LR3_2\obj\Debug\LR3_2.csproj.CoreCompileInputs.cache
+D:\Education\BSUIR\3_trim\SVPP\LR\LR_WPF_GIT\LR3\LR3_2\obj\Debug\LR3_2.exe
+D:\Education\BSUIR\3_trim\SVPP\LR\LR_WPF_GIT\LR3\LR3_2\obj\Debug\LR3_2.pdb
